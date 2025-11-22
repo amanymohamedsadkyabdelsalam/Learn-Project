@@ -5,7 +5,6 @@
     font-family: "Poppins", "Arial", sans-serif;
 }
 
-/* خلفية */
 body {
     background-image: url('background.jpg');
     background-size: cover;
@@ -14,7 +13,6 @@ body {
     background-attachment: fixed;
 }
 
-/* هيدر */
 header {
     display: flex;
     justify-content: space-between;
@@ -45,7 +43,6 @@ header .logo img {
     border: 3px solid white;
 }
 
-/* Navigation */
 .navigation ul {
     list-style: none;
     display: flex;
@@ -70,7 +67,6 @@ header .logo img {
     transform: scale(1.1);
 }
 
-/* About Section */
 .about-us {
     padding: 40px;
     background-color: rgba(255, 182, 231, 0.6);
@@ -124,7 +120,6 @@ header .logo img {
     background: linear-gradient(45deg, #a3008f, #ff7adf);
 }
 
-/* Footer */
 footer {
     background: #5c053a;
     color: white;
@@ -160,7 +155,6 @@ footer {
     border-top: 1px solid #fff;
 }
 
-/* RESPONSIVE */
 @media (max-width: 900px) {
     header {
         flex-direction: column;
