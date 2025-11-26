@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dream child acadmy</title>
+        <style>
+           body{
+    background-image:url("assets/images/background.jpg");
+}
+            form{
+                text-align: center;
+                margin-top: 200px;
+            }
+            .class{
+                width: 200px;
+                height: 50px;
+                border-color: blueviolet;
+                margin-bottom: 10px;
+                
+            }
+            #submit{
+                margin-left: 140px;
+                background-color:blueviolet;
+                width: 100px;
+                height: 50px;
+                border-radius: 15%;
+                border-color: violet;
+                color: white;
+            }
+            a{
+                text-decoration: none;
+                color: white;
+            }
+            #submit:hover,
+            submit:focus{ 
+               transform: translateY(-6px) scale(1.02); 
+                box-shadow: var(--shadow-lg);
+               outline: none; 
+               }
+            
+        </style>
+    </head>
+    <body>
+        <form>
+            
+                <label>Child name</label>
+                <input  class="class"type="text" required> 
+           
+                <label>Father name</label>
+                <input  class="class"type="text" required> 
+            
+            <div>
+                <label>Phone number</label>
+                <input  class ="class"type="text" required>
+            
+                <label>Gmail</label>
+                <input  class="class"type="email" required>
+
+            </div>
+            <div>
+                <label>Password</label>
+                <input  class="class"type="password" required>
+            </div>
+            <div>
+                <button  id="submit"><a href="login.html">create account</a></button>
+            </div>
+        </form>
+      
+    </body>
+</html>

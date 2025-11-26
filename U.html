@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style1.css">
+</head>
+<body>
+    <div class="container">
+
+    <div class="button-next">
+        <a href="V.html">next</a>
+    </div>
+    <div class="container-letter">
+        
+            <div class="letter-image">
+                <p>U</p>
+                <img src="assets/images/IMG-20251122-WA0017.jpg" alt="">
+            </div>
+
+            <div class="letter-name">
+                <p>Umbrella</p>
+            </div>
+
+            <div class="sound">
+
+            <button id="button">اضغط لسماع صوت الحرف</button>
+
+            <audio id="sound">
+              <source src="assets/audio/U.mp3" type="audio/mpeg" >
+             </audio>
+            </div>
+            
+    </div>
+      <div class="button-prev">
+        <a href="T.html">prev</a>
+    </div>
+    
+        </div>
+    
+
+    <script>
+    document.getElementById("button").onclick = function () {
+        document.getElementById("sound").play();
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style1.css">
+</head>
+<body>
+    <div class="container">
+
+  <div class="button-prev">
+        <a href="M.html">prev</a>
+    </div>
+    <div class="container-letter">
+        
+            <div class="letter-image">
+                <p>L</p>
+                <img src="assets/images/WhatsApp Image 2025-11-22 at 14.08.49_4658047c.jpg" alt="">
+            </div>
+
+            <div class="letter-name">
+                <p>Lion</p>
+            </div>
+
+            <div class="sound">
+
+            <button id="button">اضغط لسماع صوت الحرف</button>
+
+            <audio id="sound">
+              <source src="assets/audio/L.mp3" type="audio/mpeg" >
+             </audio>
+            </div>
+            
+    </div>
+    
+<div class="button-prev">
+        <a href="K.html">prev</a>
+    </div>
+        </div>
+
+    <script>
+    document.getElementById("button").onclick = function () {
+        document.getElementById("sound").play();
+    }
+    </script>
+</body>
+</html>
