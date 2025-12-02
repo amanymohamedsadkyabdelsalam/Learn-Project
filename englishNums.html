@@ -7,6 +7,54 @@
   </head>
 
   <body>
+    <button id="toggleSidebar">☰</button>
+
+    <div id="sidebar">
+      <ul class="page-links">
+        <li>
+          <a href="index.html"><i class="fa-solid fa-house-user"></i> Home</a>
+        </li>
+        <li>
+          <a href="englishLetters.html"
+            ><i class="fa-solid fa-book"></i> English</a
+          >
+        </li>
+        <li>
+          <a href="englishNums.html"
+            ><i class="fa-solid fa-book"></i> English Math</a
+          >
+        </li>
+        <li>
+          <a href="login.html"
+            ><i class="fa-solid fa-right-to-bracket"></i> Log In</a
+          >
+        </li>
+        <li>
+          <a href="sign.html"
+            ><i class="fa-regular fa-comment-dots"></i> Sign In</a
+          >
+        </li>
+      </ul>
+      <ul class="social-links">
+        <li>
+          <a href="https://www.facebook.com/AmanyMohamed1529" target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/amanymohamed1529/" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/amany-mohamed-999811342"
+            target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </li>
+      </ul>
+    </div>
     <h1>English Numbers</h1>
     <table>
       <tr>
@@ -98,6 +146,13 @@
         </td>
       </tr>
     </table>
-    <button class="btn"><a href="index.html">GO TO HOME</a></button>
+    <script>
+       const toggleBtn = document.getElementById("toggleSidebar");
+    const sidebar = document.getElementById("sidebar");
+
+    toggleBtn.addEventListener("click", () => {
+      sidebar.classList.toggle("show");
+    });
+  </script>
   </body>
 </html>

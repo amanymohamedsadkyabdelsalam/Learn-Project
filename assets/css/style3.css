@@ -1,84 +1,107 @@
-     body {
-         background-image: url(../images/WhatsApp\ Image\ 2025-11-21\ at\ 17.38.28_afd822ef.jpg);
-     }
-
-     .arabic_letters {
-         min-height: 100vh;
-         text-align: center;
-         align-items: center;
-         background-position: center;
-         background-repeat: no-repeat;
-         padding: 30px 70px;
-     }
-
-     .arabic_letters h2 {
-         font-size: 350%;
-         color: rgb(187, 32, 112);
-         margin-bottom: 20px;
-     }
-
-     .arabic_letters .container {
-         display: flex;
-         background-blend-mode: overlay;
-         background-color: rgba(237, 100, 191, 0.3);
-         flex-wrap: wrap;
-         justify-content: center;
-         direction: rtl;
-         border-radius: 20px;
-         padding: 15px;
-         gap: 15px;
-     }
-
-     .arabic_letters .card {
-         background-color: white;
-         border: solid;
-         padding: 0;
-         border-color: rgb(147, 13, 95);
-         border-radius: 25px;
-         align-items: center;
-         overflow: hidden;
-         box-sizing: border-box;
-         justify-content: center;
-         display: flex;
-         width: 16em;
-         transition: 0.3s;
-     }
-
-     .card img {
-         width: 100%;
-         height: auto;
-     }
-
-     .card:hover {
-         transform: scale(1.12);
-     }
-     
-     .btn {
-    text-decoration: none;
-    padding: 15px 30px;
-    background: linear-gradient(45deg, #ff7adf, #a3008f);
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 15px;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
-    transition: 0.3s ease;
+body {
+  background-image: url(../images/WhatsApp\ Image\ 2025-11-21\ at\ 17.38.28_afd822ef.jpg);
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
-.btn:hover {
-    transform: scale(1.08);
-    background: linear-gradient(45deg, #a3008f, #ff7adf);
+#toggleSidebar {
+  position: fixed;
+  top: 180px;
+  left: 0;
+  z-index: 1100;
+  font-size: 24px;
+  background: linear-gradient(45deg, #ff7adf, #a3008f);
+  color: #fff;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  padding: 10px 14px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: 0.3s;
 }
-     @media(max-width : 768px) {
-         .arabic_letters {
-             padding: 20px 15px;
-         }
 
-         .arabic_letters h2 {
-             font-size: 250%;
-         }
+#toggleSidebar:hover { transform: scale(1.1); }
 
-         .arabic_letters .card {
-             width: 90%;
-         }
-     }
+#sidebar {
+  position: fixed;
+  top: 220px;
+  left: 10px;
+  transform: translateX(-120%);
+  flex-direction: column;
+  gap: 18px;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+  background: rgba(255,255,255,0.1);
+  border: 2px solid rgba(255,255,255,0.5);
+  border-radius: 15px;
+  padding: 10px;
+  backdrop-filter: blur(10px);
+}
+
+#sidebar.show { transform: translateX(0); }
+
+#sidebar ul { list-style: none; padding:0; }
+#sidebar ul li { margin: 12px 0; }
+#sidebar ul li a {
+  color: #2d2d2d; font-size: 16px; display: flex; align-items: center; gap: 8px;
+  font-weight: 600; text-decoration: none; transition: 0.3s;
+}
+#sidebar ul li a:hover { color: #ff3399; transform: scale(1.1); }
+
+.arabic_letters {
+  min-height: 100vh;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.arabic_letters h2 {
+  font-size: 3em;
+  color: darkmagenta;
+  margin-bottom: 30px;
+}
+
+.arabic_letters .container {
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  gap: 25px;
+  justify-items: center;
+  padding-top: 30px;
+  direction: rtl;
+}
+
+.arabic_letters .card {
+  background: linear-gradient(135deg, #ff8c42,#ff3c78);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.3s;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  width: 150px;
+}
+
+.arabic_letters .card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.arabic_letters .card span {
+  margin-top: 10px;
+  font-size: 1.5em;
+  color: white;
+  font-weight: bold;
+}
+
+.arabic_letters .card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.arabic_letters .card.big img { height: 180px; }
+.arabic_letters .card.big span { font-size: 2.2em; font-weight: 900; }
