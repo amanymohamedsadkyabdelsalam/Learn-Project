@@ -72,7 +72,7 @@ body {
 }
 
 .arabic_letters .card {
-  background: linear-gradient(135deg, #ff8c42,#ff3c78);
+  background: linear-gradient(135deg, #ffb6c1, #ff69b4);
   border-radius: 15px;
   overflow: hidden;
   transition: 0.3s;
